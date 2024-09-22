@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indepth Precision Consult LTD</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .bg-navy-blue { background-color: #1a237e; }
+        .bg-burgundy { background-color: #800020; }
+        .text-burgundy { color: #800020; }
+        .hero-slider {
+            height: 70vh;
+            overflow: hidden;
+        }
+        .hero-slider {
+            width: 100%;
+            height: 700px; /* Adjust height as needed */
+            position: relative;
+            overflow: hidden;
+          }
+          
+        .hero-slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+          }
+          
+        .hero-slide.active {
+            opacity: 1;
+          }
+        .content-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .content-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <header class="bg-white shadow-md">
+        <div class="content-wrapper py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="logo.png" alt="Indepth Precision Consult LTD" class="h-20 mr-3">
+                <span class="text-xl font-bold text-navy-blue">Indepth Precision</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="text-navy-blue hover:text-burgundy transition-colors duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-navy-blue hover:text-burgundy transition-colors duration-300">About</a></li>
+                    <li><a href="projects.html" class="text-navy-blue hover:text-burgundy transition-colors duration-300">Projects</a></li>
+                    <li><a href="contact.html" class="text-navy-blue hover:text-burgundy transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider relative">
+            <div class="hero-slide bg-center active" style="background-image: url('images/hero1.jpeg');"> 
+              <div class="absolute inset-0 bg-black opacity-50"></div>
+              <div class="content-wrapper h-full flex items-center relative z-10">
+                <div class="text-white max-w-2xl">
+                  <h1 class="text-4xl md:text-5xl font-bold mb-4">Precision Data Solutions for Nigeria</h1>
+                  <p class="text-lg md:text-xl mb-6">Empowering decisions with accurate insights since 2004</p>
+                  <a href="services.html" class="bg-burgundy hover:bg-navy-blue text-white font-bold py-2 px-6 rounded-full transition-colors duration-300">Explore Our Services</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="hero-slide bg-center" style="background-image: url('images/slide2.jpg');"> 
+              </div>
+        
+            <div class="hero-slide bg-center" style="background-image: url('images/slide3.jpg');"> 
+              </div>
+        </section>
+
+        <section class="py-16 bg-gray-100">
+            <div class="content-wrapper">
+                <h2 class="text-3xl font-bold text-center text-navy-blue mb-12">Who We Are</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-burgundy">Our Vision</h3>
+                        <p class="text-gray-600">To be a leading provider of high quality Quantitative and Qualitative Research and survey methods through the pursuit of excellence, innovation and high professional standard.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-burgundy">Our Mission</h3>
+                        <p class="text-gray-600">To be a clear leader in the development and provision of Research Information services through highly motivated professionals aided by advanced technology and conversant with the changing trends in Research Methods and Information Technology (IT).</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-burgundy">Our Philosophy</h3>
+                        <p class="text-gray-600">The corporate Philosophy is to combine the best people, quality training, exceptional technical resources and management expertise into full research services that put the interest of our clients first.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .bg-image-overlay {
+                background-image: url('images/image3.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .overlay {
+                background-color: rgba(158, 75, 82, 0.6 ); /* navy blue with opacity */
+            }
+        </style>
+        
+        <section class="py-20 bg-image-overlay relative">
+            <div class="overlay absolute inset-0"></div>
+            <div class="content-wrapper relative z-10 text-white">
+                <h2 class="text-4xl font-bold text-center mb-12">Why Choose Us</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-30 rounded-lg p-6 text-center transform transition duration-500 hover:scale-105">
+                        <i class="fas fa-users text-5xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Experienced Team</h3>
+                        <p class="text-sm">Decades of expertise in research and data analysis</p>
+                    </div>
+                    <div class="bg-white bg-opacity-30 rounded-lg p-6 text-center transform transition duration-500 hover:scale-105">
+                        <i class="fas fa-map-marked-alt text-5xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Nationwide Coverage</h3>
+                        <p class="text-sm">Extensive network across all regions of Nigeria</p>
+                    </div>
+                    <div class="bg-white bg-opacity-30 rounded-lg p-6 text-center transform transition duration-500 hover:scale-105">
+                        <i class="fas fa-laptop-code text-5xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Advanced Technology</h3>
+                        <p class="text-sm">Cutting-edge software and data processing tools</p>
+                    </div>
+                    <div class="bg-white bg-opacity-30 rounded-lg p-6 text-center transform transition duration-500 hover:scale-105">
+                        <i class="fas fa-database text-5xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Comprehensive Database</h3>
+                        <p class="text-sm">Detailed information on all Nigerian localities</p>
+                    </div>
+                    <div class="bg-white bg-opacity-30 rounded-lg p-6 text-center transform transition duration-500 hover:scale-105">
+                        <i class="fas fa-chart-line text-5xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Precision Analytics</h3>
+                        <p class="text-sm">Accurate insights for informed decision-making</p>
+                    </div>
+                    <div class="bg-white bg-opacity-30 rounded-lg p-6 text-center transform transition duration-500 hover:scale-105">
+                        <i class="fas fa-handshake text-5xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Client-Focused</h3>
+                        <p class="text-sm">Tailored solutions to meet your specific needs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="content-wrapper">
+                <h1 class="text-3xl md:text-4xl font-bold text-center text-navy-blue mb-4">Our Services</h1>
+                <p class="text-lg text-center mb-10 text-gray-600">We offer a comprehensive range of research and data services, leveraging our expertise in survey sampling, public health, demography, computer science, and GIS.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                        <i class="fas fa-chart-line text-4xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3 text-navy-blue">Survey Design and Implementation</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Questionnaire design</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Sampling methodology</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Data collection</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Data processing and analysis</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                        <i class="fas fa-map-marked-alt text-4xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3 text-navy-blue">GIS Mapping</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Mapping of health facilities and schools</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>GPS data collection and processing</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Spatial analysis</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Creation of detailed digital maps</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                        <i class="fas fa-heartbeat text-4xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3 text-navy-blue">Public Health Research</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>HIV/AIDS and reproductive health studies</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Maternal and child health assessments</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Health facility assessments</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Immunization coverage surveys</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                        <i class="fas fa-database text-4xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3 text-navy-blue">Data Management and Analysis</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Database design and management</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Statistical analysis</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Big data processing and analytics</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Report writing and presentation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                        <i class="fas fa-chalkboard-teacher text-4xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3 text-navy-blue">Training and Capacity Building</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>GIS and GPS training</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Survey methodology workshops</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Data analysis training</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Research methods courses</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6 service-card">
+                        <i class="fas fa-handshake text-4xl text-burgundy mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3 text-navy-blue">Consultancy Services</h3>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Project evaluation</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Research design</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Technical advisory services</li>
+                            <li><i class="fas fa-check text-burgundy mr-2"></i>Policy analysis and recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-burgundy text-white">
+            <div class="content-wrapper text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6">Ready to elevate your research?</h2>
+                <p class="text-lg mb-6">Let's collaborate to bring precision and insight to your next project.</p>
+                <a href="contact.html" class="bg-white text-burgundy hover:bg-red-500 hover:text-white font-bold py-2 px-6 rounded-full transition-colors duration-300">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="content-wrapper">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3">Indepth Precision Consult LTD</h3>
+                    <p class="text-sm">SUITE B13, DANSARARI PLAZA, 5, ZIGUINCHOR STREET, ZONE 4, WUSE, FCT ABUJA</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">Contact</h3>
+                    <p class="text-sm">+2348036111330</p>
+                    <p class="text-sm">+2348055500592</p>
+                    <p class="text-sm">+23497800219</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">Email</h3>
+                    <p class="text-sm"><a href="mailto:kolapo_usman@yahoo.com" class="hover:text-burgundy transition-colors duration-300">kolapo_usman@yahoo.com</a></p>
+                    <p class="text-sm"><a href="mailto:kolapousman@gmail.com" class="hover:text-burgundy transition-colors duration-300">kolapousman@gmail.com</a></p>
+                    <p class="text-sm"><a href="mailto:indepthprecision@yahoo.com" class="hover:text-burgundy transition-colors duration-300">indepthprecision@yahoo.com</a></p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-burgundy transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-burgundy transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-burgundy transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 text-center">
+                <p class="text-sm">&copy; 2024 Indepth Precision Consult LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
